@@ -3,7 +3,7 @@ import './App.scss';
 
 function App() {
   const dispatch = useDispatch();
-  const cash = useSelector(state => state.cash)
+  const cash = useSelector(state => state.cash.cash)
 
   function addCash(cash) {
     dispatch({ type: "ADD_CASH", payload: cash })
@@ -26,3 +26,4 @@ function App() {
 }
 
 export default App;
+
